@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Welcome from './welcome';
 
 const App = ()=>{
     return (
         <div>
-            <p> React here!</p>
+            <Welcome name="Chang" />
+            <Welcome name="Fan" />
         </div>
     );
 };
 
 export default App;
 
-ReactDOM.render(<App/>, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));
