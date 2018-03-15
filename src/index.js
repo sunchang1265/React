@@ -6,6 +6,8 @@ import Toggle from './Toggle';
 import App from './App.js';
 import LoginControl from './LoginControl/LoginControl';
 import Blog from './Blog';
+import NameForm from './Forms/NameForm';
+import FlavorForm from './Forms/FlavorForm';
 
 const arr = [1, 2, 3];
 const test = () => console.log(...arr);
@@ -24,6 +26,8 @@ ReactDOM.render(
         <LoginControl />
         <hr/>
         <Blog posts={posts}/>
+        <NameForm />
+        <FlavorForm />
     </div>, 
     document.getElementById("root")
 );
