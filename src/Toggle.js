@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 class Toggle extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { isToggleOn: true };
+        this.state = { isToggleOn: true };      
 
         // This binding is necessary to make `this` work in the callback
         this.handleClick = this.handleClick.bind(this);
@@ -18,7 +18,7 @@ class Toggle extends React.Component {
 
     render() {
         return (
-            <button id='id_btn' onClick={(e) => this.handleClick(e)}>
+            <button id='id_btn' onClick={this.handleClick}>
                 {this.state.isToggleOn ? 'ON' : 'OFF'}
             </button>
         );
