@@ -5,12 +5,10 @@ import Welcome from './welcome';
 const App = ()=>{
     return (
         <div>
-            <Welcome name="Chang" />
-            <Welcome name="Fan" />
+            <Welcome name="React" />
         </div>
     );
 };
 
 export default App;
 
-// ReactDOM.render(<App />, document.getElementById("app"));

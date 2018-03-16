@@ -9,6 +9,7 @@ import Blog from './Blog';
 import NameForm from './Forms/NameForm';
 import FlavorForm from './Forms/FlavorForm';
 import Calculator from './TempCalculator/Calculator';
+import Greetings from './SpreadOperator/Greetings';
 
 const arr = [1, 2, 3];
 const test = () => console.log(...arr);
@@ -30,6 +31,7 @@ ReactDOM.render(
         <NameForm />
         <FlavorForm />
         <Calculator />
+        <Greetings.App1 /><Greetings.App2 /> 
     </div>, 
     document.getElementById("root")
 );

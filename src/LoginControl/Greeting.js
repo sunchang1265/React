@@ -17,4 +17,8 @@ function Greeting(props) {
     return <GuestGreeting />;
 }
 
-export default Greeting;
+const Greetings = {
+    Greeting: Greeting,
+    UserGreeting: UserGreeting
+}
+export default Greetings;

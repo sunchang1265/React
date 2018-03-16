@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Greeting from './Greeting';
+import Greetings from './Greeting';
 
 function LoginButton(props) {
     return (
@@ -50,7 +50,7 @@ class LoginControl extends React.Component {
 
         return (
             <div>
-                <Greeting isLoggedIn={isLoggedIn} />
+                <Greetings.Greeting isLoggedIn={isLoggedIn} />
                 {button}
             </div>
         );
