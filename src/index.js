@@ -8,6 +8,7 @@ import LoginControl from './LoginControl/LoginControl';
 import Blog from './Blog';
 import NameForm from './Forms/NameForm';
 import FlavorForm from './Forms/FlavorForm';
+import Calculator from './TempCalculator/Calculator';
 
 const arr = [1, 2, 3];
 const test = () => console.log(...arr);
@@ -28,6 +29,7 @@ ReactDOM.render(
         <Blog posts={posts}/>
         <NameForm />
         <FlavorForm />
+        <Calculator />
     </div>, 
     document.getElementById("root")
 );

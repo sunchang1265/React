@@ -21,8 +21,13 @@ class NameForm extends React.Component {
         console.log(target);
         // this.setState({ value: event.target.value });
         this.setState({
-            [name]: value
+            [name]: value //Computed property names, use with [] and expression in it
         })
+        //equivalent to
+        // var partialState = {};
+        // partialState[name] = value;
+        // this.setState(partialState);
+        //
     }
 
     // handleEssayChange(event) {
@@ -31,7 +36,9 @@ class NameForm extends React.Component {
 
     handleSubmit(event) {
         alert('A name was submitted: ' + this.state.value + '\n' +
-            'An essay was submitted: ' + this.state.essayValue);
+            'An essay was submitted: ' + this.state.essayValue + '\n' +
+            'Check box is: ' + (this.state.isGoing ? 'Checked' : 'Not Checked')
+        );
         event.preventDefault();
     }
 
@@ -49,7 +56,7 @@ class NameForm extends React.Component {
                 </label>
 
                 <label>
-                    Is going:
+                    {this.state.isGoing ? 'Is Checked' : 'Not Checked'}
                     <input
                         name="isGoing"
                         type="checkbox"
